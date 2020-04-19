@@ -1451,7 +1451,7 @@ public class GraphDatabaseConfiguration {
     }
 
     private void configureMetricsConsoleReporter() {
-        if (configuration.has(METRICS_CONSOLE_INTERVAL)) {
+        if (configuration.has(METRICS_CONSOLE_INTERVAL) && !configuration.get(METRICS_CONSOLE_INTERVAL).equals(Duration.ZERO)) {
             MetricManager.INSTANCE.addConsoleReporter(configuration.get(METRICS_CONSOLE_INTERVAL));
         }
     }

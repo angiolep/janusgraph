@@ -121,11 +121,11 @@
                         <configuration>
                             <outputDirectory>${project.build.directory}/cassandra/${test.byteorderedpartitioner}/conf</outputDirectory>
                             <filters>
-                                <filter>${project.build.testResources[0].directory}/properties/${test.byteorderedpartitioner}.properties</filter>
+                                <filter>${project.basedir}/src/test/resources/properties/${test.byteorderedpartitioner}.properties</filter>
                             </filters>
                             <resources>
                                 <resource>
-                                    <directory>${project.build.testResources[0].directory}/cassandra</directory>
+                                    <directory>${project.basedir}/src/test/resources/cassandra</directory>
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
@@ -140,11 +140,11 @@
                         <configuration>
                             <outputDirectory>${project.build.directory}/cassandra/${test.murmur}/conf</outputDirectory>
                             <filters>
-                                <filter>${project.build.testResources[0].directory}/properties/${test.murmur}.properties</filter>
+                                <filter>${project.basedir}/src/test/resources/properties/${test.murmur}.properties</filter>
                             </filters>
                             <resources>
                                 <resource>
-                                    <directory>${project.build.testResources[0].directory}/cassandra</directory>
+                                    <directory>${project.basedir}/src/test/resources/cassandra</directory>
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
@@ -159,11 +159,11 @@
                         <configuration>
                             <outputDirectory>${project.build.directory}/cassandra/${test.murmur-ssl}/conf</outputDirectory>
                             <filters>
-                                <filter>${project.build.testResources[0].directory}/properties/${test.murmur-ssl}.properties</filter>
+                                <filter>${project.basedir}/src/test/resources/properties/${test.murmur-ssl}.properties</filter>
                             </filters>
                             <resources>
                                 <resource>
-                                    <directory>${project.build.testResources[0].directory}/cassandra</directory>
+                                    <directory>${project.basedir}/src/test/resources/cassandra</directory>
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
@@ -179,7 +179,7 @@
                             <outputDirectory>${project.build.directory}/cassandra/${test.murmur-ssl}/conf</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${project.build.testResources[0].directory}/keystores</directory>
+                                    <directory>${project.basedir}/src/test/resources/keystores</directory>
                                     <filtering>false</filtering>
                                 </resource>
                             </resources>
